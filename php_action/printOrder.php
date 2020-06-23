@@ -23,6 +23,7 @@ $discount = $orderData[6];
 $grandTotal = $orderData[7];
 $paid = $orderData[8];
 $due = $orderData[9];
+$nombre = 'Libreria Mary';
 
 
 $orderItemSql = "SELECT order_item.product_id, order_item.rate, order_item.quantity, order_item.total,
@@ -38,6 +39,7 @@ $orderItemResult = $connect->query($orderItemSql);
 			<th colspan="5">
 
 			<center>
+				<center>Libreria Mary</center>
 				Fecha. : '.$orderDate.'
 				<center>Nombre : '.$clientName.'</center>
 				Contacto : '.$clientContact.'
